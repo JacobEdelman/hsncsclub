@@ -12,7 +12,7 @@
 
 from pyrcb import IRCBot
 from datetime import datetime
-import random
+import rando
 
 chan = "#hsncsclub"
 class ExampleBot(IRCBot):
