@@ -17,7 +17,10 @@ import random
 chan = "#hsncsclub"
 class ExampleBot(IRCBot):
     def on_message(self, message, nickname, channel, is_query):
-        self.send(chan, "echoing: " + message)
+        if is_query:
+            pass
+        else:
+            self.send(channel, nickname + ": " + msg)
 
 
 def main():
