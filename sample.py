@@ -12,7 +12,7 @@
 
 from pyrcb import IRCBot
 from datetime import datetime
-import rando
+import random
 
 chan = "#hsncsclub"
 class ExampleBot(IRCBot):
@@ -22,7 +22,7 @@ class ExampleBot(IRCBot):
 
 def main():
     bot = ExampleBot(debug_print=True)
-    bot.connect("irc.pdgn.co", 6697)
+    bot.connect("irc.freenode.co", 6667)
     bot.register("testbot" + str(random.randint(0,1000)))
     bot.join("#hsncsclub")
 
