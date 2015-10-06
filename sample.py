@@ -22,7 +22,7 @@ class ExampleBot(IRCBot):
 
 def main():
     bot = ExampleBot(debug_print=True)
-    bot.connect("irc.freenode.co", 6667)
+    bot.connect("irc.freenode.net", 6667)
     bot.register("testbot" + str(random.randint(0,1000)))
     bot.join("#hsncsclub")
 
